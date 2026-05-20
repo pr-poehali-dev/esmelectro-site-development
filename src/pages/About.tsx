@@ -28,9 +28,9 @@ const About = () => {
       <section className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <img
-            src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/36c3d9ba-4349-4560-b4be-af539b510596.jpg"
-            alt="Команда"
-            className="rounded-lg shadow-lg"
+            src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/6b88877d-8433-4e86-8720-e20080cfeb56.jpg"
+            alt="Производство шкафов автоматики"
+            className="rounded-lg shadow-lg w-full"
           />
           <div>
             <div className="text-xs font-mono uppercase tracking-wider text-accent mb-2">// Миссия</div>

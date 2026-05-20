@@ -91,7 +91,7 @@ export const projects = [
     year: '2024',
     desc: 'Строительство ПС 110/10 кВ мощностью 2×40 МВА с заходами ВЛ и КЛ. Полный цикл от проекта до ввода.',
     tags: ['ПС 110 кВ', 'EPC-контракт', '2×40 МВА'],
-    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/787d1448-6834-42ac-b2dc-cf33f7022df4.jpg',
+    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/74fca007-9357-428a-b339-d5c19f16168c.jpg',
   },
   {
     title: 'Электроснабжение завода металлоконструкций',
@@ -99,7 +99,7 @@ export const projects = [
     year: '2024',
     desc: 'Реконструкция системы электроснабжения цеха с заменой РУ-6 кВ и установкой АСКУЭ.',
     tags: ['РУ-6 кВ', 'АСКУЭ', 'Реконструкция'],
-    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/b2d733b6-fc2f-4b9b-b0e8-c4882400d1cc.jpg',
+    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/28864b31-810f-4746-9dae-e72f87053260.jpg',
   },
   {
     title: 'БКТП для жилого комплекса премиум-класса',
@@ -107,15 +107,15 @@ export const projects = [
     year: '2023',
     desc: 'Поставка и монтаж 12 блочных подстанций 2×1000 кВА с системой удалённой диспетчеризации.',
     tags: ['БКТП', '12 объектов', 'SCADA'],
-    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/36c3d9ba-4349-4560-b4be-af539b510596.jpg',
+    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/76cb7503-0184-4047-8df9-113e659394c5.jpg',
   },
   {
-    title: 'Кабельные сети для дата-центра',
-    client: 'IXcellerate, МО',
-    year: '2023',
-    desc: 'Прокладка более 45 км силовых и слаботочных кабелей с системой мониторинга.',
-    tags: ['Кабельные линии', 'ЦОД', '45 км'],
-    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/a852e8f6-7c6d-4ccc-af32-adf7ab7c4a22.jpg',
+    title: 'Насосная станция с автоматикой HYDRO',
+    client: 'Промышленный комплекс, Юг России',
+    year: '2024',
+    desc: 'Поставка и монтаж комплекта насосной автоматики с частотным регулированием и диспетчеризацией.',
+    tags: ['HYDRO', 'Насосная', 'Автоматика'],
+    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/8121e35c-6f26-4592-a3e4-261da9ad60a2.jpg',
   },
 ];
 
@@ -126,7 +126,7 @@ export const blogPosts = [
     date: '12 апреля 2026',
     category: 'Оборудование',
     excerpt: 'Разбираем ключевые отличия комплектных распределительных устройств и камер КСО: габариты, стоимость, обслуживание.',
-    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/36c3d9ba-4349-4560-b4be-af539b510596.jpg',
+    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/43e9008e-e7df-41c7-b3e7-d7be358a8df5.jpg',
   },
   {
     slug: 'cable-fire-safety',
@@ -134,7 +134,7 @@ export const blogPosts = [
     date: '28 марта 2026',
     category: 'Нормативы',
     excerpt: 'Обзор изменений в СП 6.13130 и практические рекомендации по выбору кабелей для критических объектов.',
-    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/a852e8f6-7c6d-4ccc-af32-adf7ab7c4a22.jpg',
+    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/033e5b1a-bd04-4da4-9357-3cb8d4d4eeb6.jpg',
   },
   {
     slug: 'tm-vs-tsl',
@@ -142,7 +142,7 @@ export const blogPosts = [
     date: '15 марта 2026',
     category: 'Оборудование',
     excerpt: 'Сравнение ТМГ и ТСЛ по 7 параметрам: стоимость владения, пожарная безопасность, КПД, шум.',
-    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/787d1448-6834-42ac-b2dc-cf33f7022df4.jpg',
+    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/ca7295ea-e8fc-4813-a60a-f67012a9ec42.jpg',
   },
   {
     slug: 'digital-substation',
@@ -150,6 +150,6 @@ export const blogPosts = [
     date: '2 марта 2026',
     category: 'Технологии',
     excerpt: 'Опыт внедрения цифровых подстанций в России: МЭК 61850, шина процесса, реальная экономика проекта.',
-    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/b2d733b6-fc2f-4b9b-b0e8-c4882400d1cc.jpg',
+    image: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/3fb082bc-ea87-4b5a-b822-b21badbe2c19.jpg',
   },
 ];
