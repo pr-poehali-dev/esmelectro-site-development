@@ -7,7 +7,7 @@ const navItems = [
   { to: '/', label: 'Главная' },
   { to: '/about', label: 'О компании' },
   { to: '/catalog', label: 'Каталог' },
-  { to: '/catalog#serial', label: 'Серия HYDRO', accent: true },
+  { to: '/catalog#serial', label: 'Серийные шкафы', accent: true },
   { to: '/services', label: 'Услуги' },
   { to: '/projects', label: 'Проекты' },
   { to: '/blog', label: 'Блог' },

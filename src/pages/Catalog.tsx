@@ -93,7 +93,7 @@ const Catalog = () => {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
             <div>
               <div className="text-xs font-mono uppercase tracking-wider text-accent mb-2">// Серийная продукция</div>
-              <h2 className="text-3xl font-bold text-primary">Готовые шкафы HYDRO и дымоудаления</h2>
+              <h2 className="text-3xl font-bold text-primary">Серийные шкафы</h2>
               <p className="text-muted-foreground mt-2 max-w-2xl">
                 Собственные серийные разработки ESM с типовыми характеристиками и пожарным сертификатом. Срок поставки от 2-3 недель.
               </p>
