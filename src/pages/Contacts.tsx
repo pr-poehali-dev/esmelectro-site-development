@@ -4,10 +4,12 @@ import LeadForm from '@/components/LeadForm';
 
 const Contacts = () => {
   const contacts = [
-    { icon: 'Phone', title: 'Телефон', value: '+7 (495) 123-45-67', href: 'tel:+74951234567' },
-    { icon: 'Mail', title: 'E-mail', value: 'info@esmelectro.ru', href: 'mailto:info@esmelectro.ru' },
-    { icon: 'MapPin', title: 'Адрес', value: 'Москва, ул. Промышленная, 15' },
-    { icon: 'Clock', title: 'Режим работы', value: 'Пн-Пт: 9:00–18:00 · Авария 24/7' },
+    { icon: 'Phone', title: 'Телефон', value: '+7 (800) 201-40-36', href: 'tel:+78002014036' },
+    { icon: 'Phone', title: 'Телефон', value: '(863) 294-42-81', href: 'tel:+78632944281' },
+    { icon: 'Smartphone', title: 'Мобильный', value: '(918) 55-44-281', href: 'tel:+79185544281' },
+    { icon: 'Mail', title: 'E-mail', value: 'energomontag@internet.ru', href: 'mailto:energomontag@internet.ru' },
+    { icon: 'MapPin', title: 'Адрес', value: 'Ростовская обл., г. Батайск, ул. Заводская, 266' },
+    { icon: 'Clock', title: 'Режим работы', value: 'Пн-Пт: 9:00–18:00 · Поддержка 24/7' },
   ];
 
   return (
@@ -49,15 +51,15 @@ const Contacts = () => {
               <div className="space-y-3 text-sm">
                 <div>
                   <div className="opacity-70 text-xs font-mono uppercase">Продажи</div>
-                  <a href="mailto:sales@esmelectro.ru" className="font-semibold hover:text-accent">sales@esmelectro.ru</a>
+                  <a href="mailto:energomontag@internet.ru" className="font-semibold hover:text-accent">energomontag@internet.ru</a>
                 </div>
                 <div>
                   <div className="opacity-70 text-xs font-mono uppercase">Проектный отдел</div>
-                  <a href="mailto:project@esmelectro.ru" className="font-semibold hover:text-accent">project@esmelectro.ru</a>
+                  <a href="mailto:energomontag@internet.ru" className="font-semibold hover:text-accent">energomontag@internet.ru</a>
                 </div>
                 <div>
                   <div className="opacity-70 text-xs font-mono uppercase">Сервис 24/7</div>
-                  <a href="tel:+74951234500" className="font-semibold hover:text-accent">+7 (495) 123-45-00</a>
+                  <a href="tel:+78002014036" className="font-semibold hover:text-accent">+7 (800) 201-40-36</a>
                 </div>
               </div>
             </div>
