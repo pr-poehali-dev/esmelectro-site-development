@@ -7,14 +7,12 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-accent flex items-center justify-center rounded">
-                <Icon name="Zap" size={22} className="text-white" />
-              </div>
-              <div>
-                <div className="font-bold text-lg">ЭСМ</div>
-                <div className="text-[10px] font-mono uppercase tracking-wider opacity-70">ТМ ESM · HYDRO</div>
-              </div>
+            <div className="flex items-center gap-3 mb-4 bg-white rounded-lg p-3 inline-flex">
+              <img
+                src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/1df36da3-4bca-4a09-8b4f-3253bcefb13b.png"
+                alt="Энергоспецмонтаж"
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-sm opacity-80 mb-4">
               Производство систем управления, автоматизации и распределения энергии.
