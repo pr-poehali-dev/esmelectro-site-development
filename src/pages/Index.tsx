@@ -14,7 +14,7 @@ const Index = () => {
             <div>
               <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-xs font-mono uppercase tracking-wider mb-6">
                 <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
-                Энергетика · С 2008 года
+                Производство · С 2023 года
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
                 Инжиниринг и производство<br />
