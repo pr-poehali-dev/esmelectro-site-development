@@ -1,18 +1,52 @@
+import { useState, useMemo } from 'react';
 import PageHeader from '@/components/PageHeader';
 import { projects } from '@/data/site';
 
 const Projects = () => {
+  const [activeFilter, setActiveFilter] = useState<string>('Все');
+
+  const categories = useMemo(() => {
+    const set = new Set<string>();
+    projects.forEach((p) => p.category && set.add(p.category));
+    return ['Все', ...Array.from(set)];
+  }, []);
+
+  const filtered = useMemo(() => {
+    if (activeFilter === 'Все') return projects;
+    return projects.filter((p) => p.category === activeFilter);
+  }, [activeFilter]);
+
   return (
     <div>
       <PageHeader
         badge="Проекты"
         title="Реализованные объекты"
-        subtitle="Подстанции, распределительные сети, электроснабжение промышленных и коммерческих объектов. За 17 лет — более 450 завершённых проектов."
+        subtitle="Шкафы управления, автоматики и распределения для аэропортов, гостиниц, театров и офисных зданий по всей России."
       />
 
       <section className="container mx-auto px-4 py-16">
+        <div className="flex flex-wrap gap-2 mb-10">
+          {categories.map((cat) => {
+            const count = cat === 'Все' ? projects.length : projects.filter((p) => p.category === cat).length;
+            const isActive = activeFilter === cat;
+            return (
+              <button
+                key={cat}
+                onClick={() => setActiveFilter(cat)}
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors border ${
+                  isActive
+                    ? 'bg-primary text-white border-primary'
+                    : 'bg-white text-primary border-border hover:border-accent hover:text-accent'
+                }`}
+              >
+                {cat} <span className="opacity-60 font-mono">({count})</span>
+              </button>
+            );
+          })}
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-8">
-          {projects.map((p) => (
+          {filtered.map((p) => (
             <article key={p.title} className="border border-border rounded-lg overflow-hidden hover:border-accent transition-colors group">
               <div className="overflow-hidden">
                 <img
@@ -34,6 +68,12 @@ const Projects = () => {
             </article>
           ))}
         </div>
+
+        {filtered.length === 0 && (
+          <div className="text-center text-muted-foreground py-12">
+            В этой категории пока нет проектов.
+          </div>
+        )}
       </section>
 
       <section className="bg-primary text-white">
