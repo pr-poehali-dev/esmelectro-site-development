@@ -17,9 +17,9 @@ const Index = () => {
                 Энергетика · С 2008 года
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
-                Инжиниринг и монтаж<br />
-                <span className="text-accent">энергообъектов</span><br />
-                под ключ
+                Инжиниринг и производство<br />
+                <span className="text-accent">шкафов управления</span>,<br />
+                автоматики и распределения
               </h1>
               <p className="text-lg opacity-90 mb-8 max-w-xl">
                 Проектируем, поставляем и монтируем электрооборудование 0,4–110 кВ.
