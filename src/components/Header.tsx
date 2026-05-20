@@ -49,10 +49,14 @@ const Header = () => {
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-3">
-            <a href="tel:+74951234567" className="text-sm font-semibold text-primary flex items-center gap-2">
+          <div className="hidden lg:flex items-center gap-4">
+            <a href="tel:+78002014036" className="text-sm font-semibold text-primary flex items-center gap-2">
               <Icon name="Phone" size={16} />
-              +7 (495) 123-45-67
+              +7 (800) 201-40-36
+            </a>
+            <a href="tel:+78632944281" className="text-sm font-semibold text-primary flex items-center gap-2">
+              <Icon name="Phone" size={16} />
+              (863) 294-42-81
             </a>
           </div>
 
@@ -83,9 +87,13 @@ const Header = () => {
                   {item.label}
                 </NavLink>
               ))}
-              <a href="tel:+74951234567" className="px-3 py-2 text-sm font-semibold text-primary flex items-center gap-2 mt-2">
+              <a href="tel:+78002014036" className="px-3 py-2 text-sm font-semibold text-primary flex items-center gap-2 mt-2">
                 <Icon name="Phone" size={16} />
-                +7 (495) 123-45-67
+                +7 (800) 201-40-36
+              </a>
+              <a href="tel:+78632944281" className="px-3 py-2 text-sm font-semibold text-primary flex items-center gap-2">
+                <Icon name="Phone" size={16} />
+                (863) 294-42-81
               </a>
             </nav>
           </div>
