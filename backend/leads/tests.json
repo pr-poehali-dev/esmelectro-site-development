@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "OPTIONS CORS",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "POST valid lead",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Тест Тестов",
+        "phone": "+7 999 000 00 00",
+        "email": "test@example.com",
+        "company": "ТестКомпания",
+        "subject": "КП на оборудование",
+        "message": "Прошу подготовить КП",
+        "lead_type": "kp"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {"success": true},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "POST missing required",
+      "method": "POST",
+      "path": "/",
+      "body": {"name": ""},
+      "expectedStatus": 400
+    }
+  ]
+}
