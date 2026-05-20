@@ -80,8 +80,8 @@ const Contacts = () => {
         <div className="container mx-auto px-4 py-12">
           <div className="rounded-lg overflow-hidden border border-border">
             <iframe
-              title="Карта"
-              src="https://yandex.ru/map-widget/v1/?ll=37.617635%2C55.755814&z=12"
+              title="Карта · г. Батайск, ул. Заводская, 266"
+              src="https://yandex.ru/map-widget/v1/?text=Ростовская%20область%2C%20Батайск%2C%20Заводская%20улица%2C%20266&z=16"
               width="100%"
               height="400"
               frameBorder="0"
