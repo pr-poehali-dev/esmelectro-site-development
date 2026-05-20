@@ -59,7 +59,7 @@ const Index = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-center max-w-3xl mx-auto">
             {[
               { v: '100+', l: 'реализованных проектов' },
-              { v: '24/7', l: 'аварийная служба' },
+              { v: '24/7', l: 'сервисная служба' },
             ].map((s) => (
               <div key={s.l}>
                 <div className="text-4xl lg:text-5xl font-bold text-primary">{s.v}</div>

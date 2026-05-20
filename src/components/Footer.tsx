@@ -73,7 +73,7 @@ const Footer = () => {
               Сб-Вс: выходной
             </p>
             <p className="text-sm opacity-80 mt-3">
-              Аварийная служба:<br />
+              Сервисная служба:<br />
               <span className="font-semibold text-accent">24/7</span>
             </p>
           </div>
