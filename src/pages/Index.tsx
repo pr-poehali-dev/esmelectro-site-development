@@ -46,7 +46,7 @@ const Index = () => {
                 className="rounded-lg shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white text-primary p-4 rounded-lg shadow-xl hidden md:block">
-                <div className="text-3xl font-bold">450+</div>
+                <div className="text-3xl font-bold">100+</div>
                 <div className="text-xs font-mono uppercase text-muted-foreground">объектов сдано</div>
               </div>
             </div>
