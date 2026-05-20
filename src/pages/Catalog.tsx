@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 import PageHeader from '@/components/PageHeader';
@@ -9,6 +10,16 @@ const Catalog = () => {
   const [active, setActive] = useState(catalogCategories[0].id);
   const [showForm, setShowForm] = useState(false);
   const [selectedItem, setSelectedItem] = useState('');
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.getElementById(location.hash.slice(1));
+      if (el) {
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100);
+      }
+    }
+  }, [location]);
 
   const current = catalogCategories.find((c) => c.id === active)!;
 
@@ -77,7 +88,7 @@ const Catalog = () => {
         </div>
       </section>
 
-      <section className="bg-secondary/30 border-y border-border">
+      <section id="serial" className="bg-secondary/30 border-y border-border scroll-mt-24">
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
             <div>

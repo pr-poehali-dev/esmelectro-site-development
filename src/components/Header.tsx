@@ -7,6 +7,7 @@ const navItems = [
   { to: '/', label: 'Главная' },
   { to: '/about', label: 'О компании' },
   { to: '/catalog', label: 'Каталог' },
+  { to: '/catalog#serial', label: 'Серия HYDRO', accent: true },
   { to: '/services', label: 'Услуги' },
   { to: '/projects', label: 'Проекты' },
   { to: '/blog', label: 'Блог' },
@@ -32,22 +33,37 @@ const Header = () => {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                end={item.to === '/'}
-                className={({ isActive }) =>
-                  `px-3 py-2 text-sm font-medium transition-colors rounded ${
-                    isActive
-                      ? 'text-accent'
-                      : 'text-foreground hover:text-accent'
-                  }`
-                }
-              >
-                {item.label}
-              </NavLink>
-            ))}
+            {navItems.map((item) => {
+              if (item.to.includes('#')) {
+                return (
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    className={`px-3 py-2 text-sm font-semibold transition-colors rounded ${
+                      item.accent ? 'text-accent hover:text-accent/80' : 'text-foreground hover:text-accent'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              }
+              return (
+                <NavLink
+                  key={item.to}
+                  to={item.to}
+                  end={item.to === '/'}
+                  className={({ isActive }) =>
+                    `px-3 py-2 text-sm font-medium transition-colors rounded ${
+                      isActive
+                        ? 'text-accent'
+                        : 'text-foreground hover:text-accent'
+                    }`
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              );
+            })}
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">
@@ -73,21 +89,37 @@ const Header = () => {
         {open && (
           <div className="lg:hidden pb-4 border-t pt-4">
             <nav className="flex flex-col gap-1">
-              {navItems.map((item) => (
-                <NavLink
-                  key={item.to}
-                  to={item.to}
-                  end={item.to === '/'}
-                  onClick={() => setOpen(false)}
-                  className={({ isActive }) =>
-                    `px-3 py-2 text-sm font-medium rounded ${
-                      isActive ? 'bg-secondary text-accent' : 'text-foreground'
-                    }`
-                  }
-                >
-                  {item.label}
-                </NavLink>
-              ))}
+              {navItems.map((item) => {
+                if (item.to.includes('#')) {
+                  return (
+                    <Link
+                      key={item.to}
+                      to={item.to}
+                      onClick={() => setOpen(false)}
+                      className={`px-3 py-2 text-sm font-semibold rounded ${
+                        item.accent ? 'text-accent' : 'text-foreground'
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                }
+                return (
+                  <NavLink
+                    key={item.to}
+                    to={item.to}
+                    end={item.to === '/'}
+                    onClick={() => setOpen(false)}
+                    className={({ isActive }) =>
+                      `px-3 py-2 text-sm font-medium rounded ${
+                        isActive ? 'bg-secondary text-accent' : 'text-foreground'
+                      }`
+                    }
+                  >
+                    {item.label}
+                  </NavLink>
+                );
+              })}
               <a href="tel:+78002014036" className="px-3 py-2 text-sm font-semibold text-primary flex items-center gap-2 mt-2">
                 <Icon name="Phone" size={16} />
                 +7 (800) 201-40-36
