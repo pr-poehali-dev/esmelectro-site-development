@@ -26,7 +26,7 @@ const Header = () => {
             </div>
             <div className="leading-tight">
               <div className="font-bold text-primary text-lg">ЭСМ</div>
-              <div className="text-[10px] text-muted-foreground font-mono uppercase tracking-wider">Энергоспецмонтаж</div>
+              <div className="text-[10px] text-muted-foreground font-mono uppercase tracking-wider">ТМ ESM · HYDRO</div>
             </div>
           </Link>
 

@@ -13,12 +13,22 @@ const Footer = () => {
               </div>
               <div>
                 <div className="font-bold text-lg">ЭСМ</div>
-                <div className="text-[10px] font-mono uppercase tracking-wider opacity-70">Энергоспецмонтаж</div>
+                <div className="text-[10px] font-mono uppercase tracking-wider opacity-70">ТМ ESM · HYDRO</div>
               </div>
             </div>
-            <p className="text-sm opacity-80">
-              Электромонтажные работы и поставка электрооборудования с 2008 года.
+            <p className="text-sm opacity-80 mb-4">
+              Производство систем управления, автоматизации и распределения энергии.
             </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-2.5 py-1 text-xs font-mono uppercase tracking-wider">
+                <Icon name="BadgeCheck" size={12} className="text-accent" />
+                ТМ ESM
+              </span>
+              <span className="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 rounded px-2.5 py-1 text-xs font-mono uppercase tracking-wider">
+                <Icon name="BadgeCheck" size={12} className="text-accent" />
+                ТМ HYDRO
+              </span>
+            </div>
           </div>
 
           <div>
