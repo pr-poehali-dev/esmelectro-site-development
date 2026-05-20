@@ -41,9 +41,9 @@ const Index = () => {
             </div>
             <div className="relative">
               <img
-                src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/b2d733b6-fc2f-4b9b-b0e8-c4882400d1cc.jpg"
-                alt="Энергооборудование"
-                className="rounded-lg shadow-2xl"
+                src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/44839ba5-7413-420c-9a29-135b041f3625.jpg"
+                alt="Шкаф управления с частотными преобразователями CHINT"
+                className="rounded-lg shadow-2xl w-full"
               />
               <div className="absolute -bottom-6 -left-6 bg-white text-primary p-4 rounded-lg shadow-xl hidden md:block">
                 <div className="text-3xl font-bold">100+</div>
