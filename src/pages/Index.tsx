@@ -56,11 +56,9 @@ const Index = () => {
 
       <section className="border-b border-border">
         <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-center max-w-3xl mx-auto">
             {[
-              { v: '17', l: 'лет на рынке' },
-              { v: '450+', l: 'реализованных проектов' },
-              { v: '120', l: 'специалистов в штате' },
+              { v: '100+', l: 'реализованных проектов' },
               { v: '24/7', l: 'аварийная служба' },
             ].map((s) => (
               <div key={s.l}>
