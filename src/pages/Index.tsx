@@ -40,11 +40,38 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <img
-                src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/63c78105-8aa0-4b0e-88f9-57a8be5656a6.jpg"
-                alt="Модули ОВЕН МВ210/МУ210 в шкафу автоматизации"
-                className="rounded-lg shadow-2xl w-full"
-              />
+              <div className="grid grid-cols-3 gap-2 lg:gap-3">
+                <img
+                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/63c78105-8aa0-4b0e-88f9-57a8be5656a6.jpg"
+                  alt="Модули ОВЕН МВ210"
+                  className="rounded-lg shadow-xl w-full h-32 lg:h-40 object-cover row-span-2 h-full"
+                />
+                <img
+                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/07d692ec-c983-42ac-bf37-7af4654bf60f.JPG"
+                  alt="Аэропорт Елизово"
+                  className="rounded-lg shadow-xl w-full h-32 lg:h-40 object-cover"
+                />
+                <img
+                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/9259fa00-0503-4d01-bbf7-803853cc6c02.JPG"
+                  alt="HYDRO GS-480"
+                  className="rounded-lg shadow-xl w-full h-32 lg:h-40 object-cover"
+                />
+                <img
+                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/a31e0957-a9df-4a84-8af7-73c5f2f3244d.JPG"
+                  alt="ESM-M1 электрообогрев"
+                  className="rounded-lg shadow-xl w-full h-32 lg:h-40 object-cover"
+                />
+                <img
+                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/45b66cca-7292-458e-8eaa-4f5c884e7b96.JPG"
+                  alt="Шкаф дымоудаления"
+                  className="rounded-lg shadow-xl w-full h-32 lg:h-40 object-cover"
+                />
+                <img
+                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/4490fa75-efd8-4021-a668-2fec77cb26eb.JPG"
+                  alt="Логопарк МАГНИТ"
+                  className="rounded-lg shadow-xl w-full h-32 lg:h-40 object-cover col-span-2"
+                />
+              </div>
               <div className="absolute -bottom-6 -left-6 bg-white text-primary p-4 rounded-lg shadow-xl hidden md:block">
                 <div className="text-3xl font-bold">100+</div>
                 <div className="text-xs font-mono uppercase text-muted-foreground">объектов сдано</div>
