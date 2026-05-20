@@ -41,8 +41,8 @@ const Index = () => {
             </div>
             <div className="relative">
               <img
-                src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/0a3aea36-7f10-437e-ace4-babd646fa036.jpg"
-                alt="Шкаф управления с автоматикой CHINT, ПЛК и SCADA"
+                src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/63c78105-8aa0-4b0e-88f9-57a8be5656a6.jpg"
+                alt="Модули ОВЕН МВ210/МУ210 в шкафу автоматизации"
                 className="rounded-lg shadow-2xl w-full"
               />
               <div className="absolute -bottom-6 -left-6 bg-white text-primary p-4 rounded-lg shadow-xl hidden md:block">
