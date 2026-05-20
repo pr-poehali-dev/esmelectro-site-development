@@ -27,8 +27,8 @@ const About = () => {
       <section className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <img
-            src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/files/6b88877d-8433-4e86-8720-e20080cfeb56.jpg"
-            alt="Производство шкафов автоматики"
+            src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/8e5cfcf3-d97e-4057-bb09-06f2c67fe3c1.jpg"
+            alt="Производственный цех Энергоспецмонтаж"
             className="rounded-lg shadow-lg w-full"
           />
           <div>
