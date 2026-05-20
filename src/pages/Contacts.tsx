@@ -89,6 +89,65 @@ const Contacts = () => {
           </div>
         </div>
       </section>
+
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-xs font-mono uppercase tracking-wider text-accent mb-2">// Маршрут</div>
+        <h2 className="text-3xl font-bold text-primary mb-10">Как до нас добраться</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="border border-border rounded-lg p-6 hover:border-accent transition-colors">
+            <div className="w-12 h-12 bg-accent/10 rounded flex items-center justify-center mb-4">
+              <Icon name="Car" size={24} className="text-accent" />
+            </div>
+            <h3 className="font-bold text-lg text-primary mb-3">На автомобиле</h3>
+            <p className="text-sm text-muted-foreground mb-3">
+              Из Ростова-на-Дону по трассе М-4 «Дон» — около 20 минут в сторону Батайска.
+              Съезд на ул. Заводская, ориентир — промзона.
+            </p>
+            <p className="text-xs font-mono text-muted-foreground">Парковка для клиентов на территории.</p>
+          </div>
+
+          <div className="border border-border rounded-lg p-6 hover:border-accent transition-colors">
+            <div className="w-12 h-12 bg-accent/10 rounded flex items-center justify-center mb-4">
+              <Icon name="Bus" size={24} className="text-accent" />
+            </div>
+            <h3 className="font-bold text-lg text-primary mb-3">Общественным транспортом</h3>
+            <p className="text-sm text-muted-foreground mb-3">
+              Из Ростова — маршрутки и автобусы до Батайска (Автовокзал).
+              Далее — городским транспортом или такси до ул. Заводской.
+            </p>
+            <p className="text-xs font-mono text-muted-foreground">Дорога занимает ~40 минут.</p>
+          </div>
+
+          <div className="border border-border rounded-lg p-6 hover:border-accent transition-colors">
+            <div className="w-12 h-12 bg-accent/10 rounded flex items-center justify-center mb-4">
+              <Icon name="Train" size={24} className="text-accent" />
+            </div>
+            <h3 className="font-bold text-lg text-primary mb-3">На электричке</h3>
+            <p className="text-sm text-muted-foreground mb-3">
+              От Главного железнодорожного вокзала Ростова — пригородные электропоезда до станции «Батайск».
+              Далее — такси до производства (~10 минут).
+            </p>
+            <p className="text-xs font-mono text-muted-foreground">В пути 25–30 минут.</p>
+          </div>
+        </div>
+
+        <div className="mt-8 bg-primary text-white rounded-lg p-6 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
+          <div className="flex items-start gap-3">
+            <Icon name="Info" size={22} className="text-accent shrink-0 mt-0.5" />
+            <p className="text-sm">
+              Планируете визит? Позвоните заранее — мы организуем встречу
+              и проведём по производству.
+            </p>
+          </div>
+          <a
+            href="tel:+78002014036"
+            className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-6 py-2.5 rounded font-semibold whitespace-nowrap"
+          >
+            <Icon name="Phone" size={16} />
+            +7 (800) 201-40-36
+          </a>
+        </div>
+      </section>
     </div>
   );
 };
