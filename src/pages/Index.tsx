@@ -41,42 +41,30 @@ const Index = () => {
             </div>
             <div className="relative">
               <div className="grid grid-cols-3 gap-2 lg:gap-3">
-                <img
-                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/63c78105-8aa0-4b0e-88f9-57a8be5656a6.jpg"
-                  alt="Модули ОВЕН МВ210"
-                  className="rounded-lg shadow-xl w-full object-cover row-span-2 h-full animate-tile-in"
-                  style={{ animationDelay: '0ms' }}
-                />
-                <img
-                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/07d692ec-c983-42ac-bf37-7af4654bf60f.JPG"
-                  alt="Аэропорт Елизово"
-                  className="rounded-lg shadow-xl w-full h-32 lg:h-40 object-cover animate-tile-in"
-                  style={{ animationDelay: '100ms' }}
-                />
-                <img
-                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/9259fa00-0503-4d01-bbf7-803853cc6c02.JPG"
-                  alt="HYDRO GS-480"
-                  className="rounded-lg shadow-xl w-full h-32 lg:h-40 object-cover animate-tile-in"
-                  style={{ animationDelay: '200ms' }}
-                />
-                <img
-                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/a31e0957-a9df-4a84-8af7-73c5f2f3244d.JPG"
-                  alt="ESM-M1 электрообогрев"
-                  className="rounded-lg shadow-xl w-full h-32 lg:h-40 object-cover animate-tile-in"
-                  style={{ animationDelay: '300ms' }}
-                />
-                <img
-                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/45b66cca-7292-458e-8eaa-4f5c884e7b96.JPG"
-                  alt="Шкаф дымоудаления"
-                  className="rounded-lg shadow-xl w-full h-32 lg:h-40 object-cover animate-tile-in"
-                  style={{ animationDelay: '400ms' }}
-                />
-                <img
-                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/4490fa75-efd8-4021-a668-2fec77cb26eb.JPG"
-                  alt="Логопарк МАГНИТ"
-                  className="rounded-lg shadow-xl w-full h-32 lg:h-40 object-cover col-span-2 animate-tile-in"
-                  style={{ animationDelay: '500ms' }}
-                />
+                {[
+                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/63c78105-8aa0-4b0e-88f9-57a8be5656a6.jpg', alt: 'Модули ОВЕН МВ210', extra: 'row-span-2 h-full' },
+                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/07d692ec-c983-42ac-bf37-7af4654bf60f.JPG', alt: 'Аэропорт Елизово', extra: 'h-32 lg:h-40' },
+                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/9259fa00-0503-4d01-bbf7-803853cc6c02.JPG', alt: 'HYDRO GS-480', extra: 'h-32 lg:h-40' },
+                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/a31e0957-a9df-4a84-8af7-73c5f2f3244d.JPG', alt: 'ESM-M1 электрообогрев', extra: 'h-32 lg:h-40' },
+                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/45b66cca-7292-458e-8eaa-4f5c884e7b96.JPG', alt: 'Шкаф дымоудаления', extra: 'h-32 lg:h-40' },
+                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/4490fa75-efd8-4021-a668-2fec77cb26eb.JPG', alt: 'Логопарк МАГНИТ', extra: 'h-32 lg:h-40 col-span-2' },
+                ].map((tile, i) => (
+                  <div
+                    key={tile.src}
+                    className={`relative overflow-hidden rounded-lg shadow-xl group cursor-pointer animate-tile-in transition-all duration-300 hover:shadow-2xl hover:shadow-accent/40 hover:z-10 hover:scale-105 hover:ring-2 hover:ring-accent ${tile.extra}`}
+                    style={{ animationDelay: `${i * 100}ms` }}
+                  >
+                    <img
+                      src={tile.src}
+                      alt={tile.alt}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute bottom-0 left-0 right-0 p-2 lg:p-3 text-white text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      {tile.alt}
+                    </div>
+                  </div>
+                ))}
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white text-primary p-4 rounded-lg shadow-xl hidden md:block">
                 <div className="text-3xl font-bold">100+</div>
