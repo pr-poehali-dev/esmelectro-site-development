@@ -12,6 +12,26 @@ const heroSlides = [
     caption: 'Готовое изделие на объекте',
   },
   {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/5f587532-c940-4790-a428-3438e3718481.jpg',
+    title: 'Два шкафа управления приводами',
+    caption: 'Полная сборка с автоматикой VEDA VFD',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/a3acbc0b-4b95-49c7-a02f-99970631fc62.jpg',
+    title: 'Силовой шкаф ВРУ с шинной системой',
+    caption: 'Распределение и учёт энергии',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/f2809d62-7618-473a-85f9-e76d5131e08c.jpg',
+    title: 'Серия шкафов автоматики на производстве',
+    caption: 'Этап монтажа в цехе',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/524599f3-6fd1-460d-b9c4-60b70d5b9069.jpg',
+    title: 'Шкаф управления с HMI-панелью',
+    caption: 'Лицевая панель оператора с сенсорным экраном',
+  },
+  {
     src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/ad88726c-7197-4652-8e5c-f9170da921d0.jpg',
     title: 'Монтаж силовой и слаботочной части',
     caption: 'Сборка релейной автоматики CHNT',
