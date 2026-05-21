@@ -1,10 +1,31 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 import LeadForm from '@/components/LeadForm';
 import { services, projects, catalogCategories } from '@/data/site';
 
+const heroSlides = [
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/f09f70e3-5a56-46b1-ace1-61e2c8d067fd.jpg',
+    title: 'Шкаф с частотными преобразователями',
+    caption: 'Готовое изделие на объекте',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/ad88726c-7197-4652-8e5c-f9170da921d0.jpg',
+    title: 'Монтаж силовой и слаботочной части',
+    caption: 'Сборка релейной автоматики CHNT',
+  },
+];
+
 const Index = () => {
+  const [slide, setSlide] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => setSlide((s) => (s + 1) % heroSlides.length), 4500);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <div>
       <section className="relative gradient-hero text-white overflow-hidden">
@@ -40,28 +61,33 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl ring-1 ring-white/10 group cursor-pointer">
-                <img
-                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/3540f9e2-90eb-4a5f-be44-7269b4335491.jpg"
-                  alt="Производство шкафов автоматики"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative">
-                    <div className="absolute inset-0 bg-accent rounded-full animate-ping opacity-40"></div>
-                    <button
-                      type="button"
-                      className="relative w-20 h-20 lg:w-24 lg:h-24 bg-accent hover:bg-accent/90 rounded-full flex items-center justify-center shadow-2xl transition-transform group-hover:scale-110"
-                      aria-label="Воспроизвести видео"
-                    >
-                      <Icon name="Play" size={36} className="text-white ml-1.5" />
-                    </button>
-                  </div>
-                </div>
+              <div className="relative aspect-[4/3] lg:aspect-video rounded-lg overflow-hidden shadow-2xl ring-1 ring-white/10">
+                {heroSlides.map((s, i) => (
+                  <img
+                    key={s.src}
+                    src={s.src}
+                    alt={s.title}
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === slide ? 'opacity-100' : 'opacity-0'}`}
+                  />
+                ))}
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
-                  <div className="text-xs font-mono uppercase tracking-wider text-accent mb-1">// Видео о компании</div>
-                  <div className="text-white text-lg lg:text-xl font-bold">Как мы собираем шкафы автоматики</div>
+                  <div className="text-xs font-mono uppercase tracking-wider text-accent mb-1">// Производство</div>
+                  <div className="text-white text-lg lg:text-xl font-bold transition-all duration-500" key={heroSlides[slide].title}>
+                    {heroSlides[slide].title}
+                  </div>
+                  <div className="text-white/70 text-sm mt-1">{heroSlides[slide].caption}</div>
+                </div>
+                <div className="absolute top-4 right-4 flex gap-2">
+                  {heroSlides.map((_, i) => (
+                    <button
+                      key={i}
+                      type="button"
+                      onClick={() => setSlide(i)}
+                      aria-label={`Слайд ${i + 1}`}
+                      className={`h-1.5 rounded-full transition-all ${i === slide ? 'bg-accent w-8' : 'bg-white/40 w-4 hover:bg-white/70'}`}
+                    />
+                  ))}
                 </div>
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white text-primary p-4 rounded-lg shadow-xl hidden md:block">
