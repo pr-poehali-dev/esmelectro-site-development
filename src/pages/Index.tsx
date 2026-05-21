@@ -7,8 +7,8 @@ import { services, projects, catalogCategories } from '@/data/site';
 
 const heroSlides = [
   {
-    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/f09f70e3-5a56-46b1-ace1-61e2c8d067fd.jpg',
-    title: 'Шкаф с частотными преобразователями',
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/530193ea-7007-4dc4-8909-d89289f34475.jpg',
+    title: 'Шкаф с частотными преобразователями VEDA VFD',
     caption: 'Готовое изделие на объекте',
   },
   {
