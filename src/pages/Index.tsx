@@ -43,10 +43,10 @@ const Index = () => {
               <div className="grid grid-cols-3 gap-2 lg:gap-3">
                 {[
                   { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/63c78105-8aa0-4b0e-88f9-57a8be5656a6.jpg', alt: 'Модули ОВЕН МВ210', extra: 'row-span-2 h-full' },
-                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/07d692ec-c983-42ac-bf37-7af4654bf60f.JPG', alt: 'Аэропорт Елизово', extra: 'h-32 lg:h-40' },
-                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/9259fa00-0503-4d01-bbf7-803853cc6c02.JPG', alt: 'HYDRO GS-480', extra: 'h-32 lg:h-40' },
-                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/a31e0957-a9df-4a84-8af7-73c5f2f3244d.JPG', alt: 'ESM-M1 электрообогрев', extra: 'h-32 lg:h-40' },
-                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/45b66cca-7292-458e-8eaa-4f5c884e7b96.JPG', alt: 'Шкаф дымоудаления', extra: 'h-32 lg:h-40' },
+                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/3540f9e2-90eb-4a5f-be44-7269b4335491.jpg', alt: 'Шкаф управления с частотниками Hertz', extra: 'h-32 lg:h-40' },
+                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/a3c2fd98-f560-42dd-8f25-4933e0572047.jpg', alt: 'Частотные преобразователи Hertz', extra: 'h-32 lg:h-40' },
+                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/8e653f60-c67a-43b2-bd8f-61a93fac6ab4.jpg', alt: 'Контроллер ОВЕН МУ210-402', extra: 'h-32 lg:h-40' },
+                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/80f04cb4-86aa-48d6-bc32-f72ada1c8da3.jpg', alt: 'Команда Энергоспецмонтаж', extra: 'h-32 lg:h-40' },
                   { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/4490fa75-efd8-4021-a668-2fec77cb26eb.JPG', alt: 'Логопарк МАГНИТ', extra: 'h-32 lg:h-40 col-span-2' },
                 ].map((tile, i) => (
                   <div
