@@ -75,6 +75,41 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="bg-secondary/30 border-b border-border">
+        <div className="container mx-auto px-4 py-16 lg:py-20">
+          <div className="text-center mb-10">
+            <div className="text-xs font-mono uppercase tracking-wider text-accent mb-2">// Производство</div>
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary">Наши работы вживую</h2>
+            <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">Шкафы автоматики, частотные преобразователи и системы управления собственного производства</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-4 max-w-6xl mx-auto">
+            {[
+              { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/3540f9e2-90eb-4a5f-be44-7269b4335491.jpg', alt: 'Шкаф управления с частотниками Hertz', extra: 'col-span-2 row-span-2 aspect-square md:aspect-auto' },
+              { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/cc3d4609-219f-4f87-87bf-f69e85eb9268.jpg', alt: 'Модули ОВЕН МУ210 и МВ210', extra: 'aspect-square' },
+              { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/a3c2fd98-f560-42dd-8f25-4933e0572047.jpg', alt: 'Частотные преобразователи Hertz', extra: 'aspect-square' },
+              { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/8e653f60-c67a-43b2-bd8f-61a93fac6ab4.jpg', alt: 'Контроллер ОВЕН МУ210-402', extra: 'aspect-square' },
+              { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/80f04cb4-86aa-48d6-bc32-f72ada1c8da3.jpg', alt: 'Команда Энергоспецмонтаж', extra: 'aspect-square' },
+            ].map((tile, i) => (
+              <div
+                key={tile.src}
+                className={`relative overflow-hidden rounded-lg shadow-md group cursor-pointer animate-tile-in transition-all duration-300 hover:shadow-2xl hover:shadow-accent/30 hover:z-10 hover:scale-[1.02] hover:ring-2 hover:ring-accent ${tile.extra}`}
+                style={{ animationDelay: `${i * 100}ms` }}
+              >
+                <img
+                  src={tile.src}
+                  alt={tile.alt}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-3 lg:p-4 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
+                  {tile.alt}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="border-b border-border">
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-center max-w-3xl mx-auto">
