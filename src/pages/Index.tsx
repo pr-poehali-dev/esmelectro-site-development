@@ -47,7 +47,7 @@ const Index = () => {
                   { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/a3c2fd98-f560-42dd-8f25-4933e0572047.jpg', alt: 'Частотные преобразователи Hertz', extra: 'h-32 lg:h-40' },
                   { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/8e653f60-c67a-43b2-bd8f-61a93fac6ab4.jpg', alt: 'Контроллер ОВЕН МУ210-402', extra: 'h-32 lg:h-40' },
                   { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/80f04cb4-86aa-48d6-bc32-f72ada1c8da3.jpg', alt: 'Команда Энергоспецмонтаж', extra: 'h-32 lg:h-40' },
-                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/4490fa75-efd8-4021-a668-2fec77cb26eb.JPG', alt: 'Логопарк МАГНИТ', extra: 'h-32 lg:h-40 col-span-2' },
+                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/cc3d4609-219f-4f87-87bf-f69e85eb9268.jpg', alt: 'Модули ОВЕН МУ210 и МВ210', extra: 'h-32 lg:h-40 col-span-2' },
                 ].map((tile, i) => (
                   <div
                     key={tile.src}
