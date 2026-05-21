@@ -81,7 +81,7 @@ const Footer = () => {
 
         <div className="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between gap-4 text-xs opacity-60">
           <div>© 2023–2026 ООО «Энергоспецмонтаж». Все права защищены.</div>
-          <div className="font-mono">energomontag.ru</div>
+          <div className="font-mono">esmelectro.ru</div>
         </div>
       </div>
     </footer>
