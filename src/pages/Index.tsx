@@ -40,31 +40,29 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="grid grid-cols-3 gap-2 lg:gap-3">
-                {[
-                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/63c78105-8aa0-4b0e-88f9-57a8be5656a6.jpg', alt: 'Модули ОВЕН МВ210', extra: 'row-span-2 h-full' },
-                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/3540f9e2-90eb-4a5f-be44-7269b4335491.jpg', alt: 'Шкаф управления с частотниками Hertz', extra: 'h-32 lg:h-40' },
-                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/a3c2fd98-f560-42dd-8f25-4933e0572047.jpg', alt: 'Частотные преобразователи Hertz', extra: 'h-32 lg:h-40' },
-                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/8e653f60-c67a-43b2-bd8f-61a93fac6ab4.jpg', alt: 'Контроллер ОВЕН МУ210-402', extra: 'h-32 lg:h-40' },
-                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/80f04cb4-86aa-48d6-bc32-f72ada1c8da3.jpg', alt: 'Команда Энергоспецмонтаж', extra: 'h-32 lg:h-40' },
-                  { src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/cc3d4609-219f-4f87-87bf-f69e85eb9268.jpg', alt: 'Модули ОВЕН МУ210 и МВ210', extra: 'h-32 lg:h-40 col-span-2' },
-                ].map((tile, i) => (
-                  <div
-                    key={tile.src}
-                    className={`relative overflow-hidden rounded-lg shadow-xl group cursor-pointer animate-tile-in transition-all duration-300 hover:shadow-2xl hover:shadow-accent/40 hover:z-10 hover:scale-105 hover:ring-2 hover:ring-accent ${tile.extra}`}
-                    style={{ animationDelay: `${i * 100}ms` }}
-                  >
-                    <img
-                      src={tile.src}
-                      alt={tile.alt}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute bottom-0 left-0 right-0 p-2 lg:p-3 text-white text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      {tile.alt}
-                    </div>
+              <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl ring-1 ring-white/10 group cursor-pointer">
+                <img
+                  src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/3540f9e2-90eb-4a5f-be44-7269b4335491.jpg"
+                  alt="Производство шкафов автоматики"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-accent rounded-full animate-ping opacity-40"></div>
+                    <button
+                      type="button"
+                      className="relative w-20 h-20 lg:w-24 lg:h-24 bg-accent hover:bg-accent/90 rounded-full flex items-center justify-center shadow-2xl transition-transform group-hover:scale-110"
+                      aria-label="Воспроизвести видео"
+                    >
+                      <Icon name="Play" size={36} className="text-white ml-1.5" />
+                    </button>
                   </div>
-                ))}
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-5 lg:p-6">
+                  <div className="text-xs font-mono uppercase tracking-wider text-accent mb-1">// Видео о компании</div>
+                  <div className="text-white text-lg lg:text-xl font-bold">Как мы собираем шкафы автоматики</div>
+                </div>
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white text-primary p-4 rounded-lg shadow-xl hidden md:block">
                 <div className="text-3xl font-bold">100+</div>
