@@ -36,6 +36,26 @@ const heroSlides = [
     title: 'Монтаж силовой и слаботочной части',
     caption: 'Сборка релейной автоматики CHNT',
   },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/2c58185c-0e16-4765-84fb-a8231494d96d.jpg',
+    title: 'Контроллер Siemens SIMATIC ET 200SP',
+    caption: 'Промышленная автоматика верхнего уровня',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/63a7a792-d239-42be-b62c-9de8c30accd3.jpeg',
+    title: 'Шкаф автоматики с частотными приводами',
+    caption: 'Полная заводская сборка',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/80d14b34-8ef5-4447-9941-b2000ff9e665.jpg',
+    title: 'Шкафы противопожарной автоматики',
+    caption: 'Управление системой дымоудаления',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/c4cfb32c-347c-4c04-84cc-d7f6603806a3.jpg',
+    title: 'HMI-панель управления вентиляцией',
+    caption: 'Мнемосхема приточной установки',
+  },
 ];
 
 const Index = () => {
