@@ -42,11 +42,6 @@ const heroSlides = [
     caption: 'Сборка релейной автоматики CHNT',
   },
   {
-    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/80d14b34-8ef5-4447-9941-b2000ff9e665.jpg',
-    title: 'Шкафы противопожарной автоматики',
-    caption: 'Управление системой дымоудаления',
-  },
-  {
     src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/b480b9a0-409b-44b7-92e8-b8662de6761d.jpg',
     title: 'Производство и пусконаладка',
     caption: 'Проверка шкафа управления на стенде',
