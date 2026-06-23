@@ -7,8 +7,13 @@ import { services, projects, catalogCategories } from '@/data/site';
 
 const heroSlides = [
   {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/db456e7f-f567-4386-bece-8e44d9816e05.jpg',
+    title: 'Шкаф автоматики на ПЛК ОВЕН ПЛК200',
+    caption: 'Модули ввода-вывода и релейная группа',
+  },
+  {
     src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/275932a9-bc58-4eef-ada3-40f4f280e365.jpg',
-    title: 'Аккуратный монтаж релейной группы',
+    title: 'Системы релейной автоматики',
     caption: 'Маркировка и раскладка проводов',
   },
   {
@@ -60,11 +65,6 @@ const heroSlides = [
     src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/c4cfb32c-347c-4c04-84cc-d7f6603806a3.jpg',
     title: 'HMI-панель управления вентиляцией',
     caption: 'Мнемосхема приточной установки',
-  },
-  {
-    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/db456e7f-f567-4386-bece-8e44d9816e05.jpg',
-    title: 'Шкаф автоматики на ПЛК ОВЕН ПЛК200',
-    caption: 'Модули ввода-вывода и релейная группа',
   },
 ];
 
