@@ -27,11 +27,6 @@ const heroSlides = [
     caption: 'Этап монтажа в цехе',
   },
   {
-    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/524599f3-6fd1-460d-b9c4-60b70d5b9069.jpg',
-    title: 'Шкаф управления с HMI-панелью',
-    caption: 'Лицевая панель оператора с сенсорным экраном',
-  },
-  {
     src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/ad88726c-7197-4652-8e5c-f9170da921d0.jpg',
     title: 'Монтаж силовой и слаботочной части',
     caption: 'Сборка релейной автоматики CHNT',
@@ -40,11 +35,6 @@ const heroSlides = [
     src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/2c58185c-0e16-4765-84fb-a8231494d96d.jpg',
     title: 'Контроллер Siemens SIMATIC ET 200SP',
     caption: 'Промышленная автоматика верхнего уровня',
-  },
-  {
-    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/63a7a792-d239-42be-b62c-9de8c30accd3.jpeg',
-    title: 'Шкаф автоматики с частотными приводами',
-    caption: 'Полная заводская сборка',
   },
   {
     src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/80d14b34-8ef5-4447-9941-b2000ff9e665.jpg',
@@ -70,11 +60,6 @@ const heroSlides = [
     src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/b8ca329b-2172-4dd9-8cf2-58dda46393f8.png',
     title: 'Конструктив шкафа автоматизации',
     caption: 'Компоновка оборудования ТМ ESM',
-  },
-  {
-    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/53bad05a-e5f6-4a3d-b504-171e88df6eb7.jpg',
-    title: 'Панель оператора VEDA HMI',
-    caption: 'Управление тепловым пунктом',
   },
   {
     src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/f28b6ffe-6ae5-4857-a82e-b08c7f7498f9.jpg',
