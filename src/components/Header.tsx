@@ -21,12 +21,14 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <Link to="/" className="flex items-center gap-3">
-            <img
-              src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/1df36da3-4bca-4a09-8b4f-3253bcefb13b.png"
-              alt="Энергоспецмонтаж"
-              className="h-10 lg:h-12 w-auto"
-            />
+          <Link to="/" className="flex items-center gap-3 group">
+            <span className="logo-anim overflow-hidden rounded">
+              <img
+                src="https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/1df36da3-4bca-4a09-8b4f-3253bcefb13b.png"
+                alt="Энергоспецмонтаж"
+                className="h-10 lg:h-12 w-auto block"
+              />
+            </span>
             <div className="leading-tight hidden sm:block">
               <div className="text-[10px] text-muted-foreground font-mono uppercase tracking-wider">ТМ ESM · HYDRO</div>
             </div>
