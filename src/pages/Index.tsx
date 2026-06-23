@@ -56,6 +56,31 @@ const heroSlides = [
     title: 'HMI-панель управления вентиляцией',
     caption: 'Мнемосхема приточной установки',
   },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/db456e7f-f567-4386-bece-8e44d9816e05.jpg',
+    title: 'Шкаф автоматики на ПЛК ОВЕН ПЛК200',
+    caption: 'Модули ввода-вывода и релейная группа',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/275932a9-bc58-4eef-ada3-40f4f280e365.jpg',
+    title: 'Аккуратный монтаж релейной группы',
+    caption: 'Маркировка и раскладка проводов',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/b8ca329b-2172-4dd9-8cf2-58dda46393f8.png',
+    title: 'Конструктив шкафа автоматизации',
+    caption: 'Компоновка оборудования ТМ ESM',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/53bad05a-e5f6-4a3d-b504-171e88df6eb7.jpg',
+    title: 'Панель оператора VEDA HMI',
+    caption: 'Управление тепловым пунктом',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/f28b6ffe-6ae5-4857-a82e-b08c7f7498f9.jpg',
+    title: 'Шкаф с частотными приводами Sinvel',
+    caption: 'Полная заводская сборка с разводкой',
+  },
 ];
 
 const Index = () => {
