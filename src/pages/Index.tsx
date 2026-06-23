@@ -66,6 +66,26 @@ const heroSlides = [
     title: 'HMI-панель управления вентиляцией',
     caption: 'Мнемосхема приточной установки',
   },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/b480b9a0-409b-44b7-92e8-b8662de6761d.jpg',
+    title: 'Производство и пусконаладка',
+    caption: 'Проверка шкафа управления на стенде',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/3ac7250f-2bd7-4827-ad17-eb0e4573cef0.jpg',
+    title: 'Проектирование в AutoCAD',
+    caption: 'Разработка электрических схем',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/3df4b51f-637c-46ba-86fe-c2c53502991b.jpg',
+    title: 'Шкаф управления конденсата на ПЛК ОВЕН',
+    caption: 'С приводами Sinvel и документацией',
+  },
+  {
+    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/85cdb363-9d5c-4970-a595-eb724167a33d.jpg',
+    title: 'Разработка ПО и наладка',
+    caption: 'Программирование контроллеров ESM HYDRO',
+  },
 ];
 
 const Index = () => {
