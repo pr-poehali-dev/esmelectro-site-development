@@ -138,4 +138,51 @@
       hsl(215 75% 12%) 100%
     );
   }
+
+  @keyframes energy-flow {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  @keyframes float-up {
+    0% {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes grid-pan {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
+  }
+
+  .energy-line {
+    position: absolute;
+    height: 2px;
+    width: 40%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(32 95% 50% / 0.9),
+      transparent
+    );
+    animation: energy-flow 3.5s linear infinite;
+  }
+  .grid-animate {
+    animation: grid-pan 6s linear infinite;
+  }
+  .animate-float-up {
+    opacity: 0;
+    animation: float-up 0.8s ease-out forwards;
+  }
 }

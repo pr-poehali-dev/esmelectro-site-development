@@ -69,24 +69,30 @@ const Index = () => {
   return (
     <div>
       <section className="relative gradient-hero text-white overflow-hidden">
-        <div className="absolute inset-0 tech-grid opacity-30"></div>
+        <div className="absolute inset-0 tech-grid grid-animate opacity-30"></div>
+        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden>
+          <div className="energy-line" style={{ top: '22%', animationDelay: '0s' }} />
+          <div className="energy-line" style={{ top: '48%', animationDelay: '1.2s' }} />
+          <div className="energy-line" style={{ top: '70%', animationDelay: '2.1s' }} />
+          <div className="energy-line" style={{ top: '88%', animationDelay: '0.6s' }} />
+        </div>
         <div className="container mx-auto px-4 py-20 lg:py-28 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-xs font-mono uppercase tracking-wider mb-6">
+              <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-xs font-mono uppercase tracking-wider mb-6 animate-float-up" style={{ animationDelay: '0s' }}>
                 <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
                 Работаем по всей России
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6 animate-float-up" style={{ animationDelay: '0.15s' }}>
                 Инжиниринг и производство<br />
                 <span className="text-accent">шкафов управления</span>,<br />
                 автоматики и распределения
               </h1>
-              <p className="text-lg opacity-90 mb-8 max-w-xl">
+              <p className="text-lg opacity-90 mb-8 max-w-xl animate-float-up" style={{ animationDelay: '0.3s' }}>
                 Производство систем управления, автоматизации, диспетчеризации, распределения энергии.
                 Проектирование, монтаж, ПНР. tm ESM, HYDRO
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 animate-float-up" style={{ animationDelay: '0.45s' }}>
                 <Link to="/catalog">
                   <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
                     Каталог оборудования
