@@ -171,6 +171,34 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="bg-secondary border-b border-border">
+        <div className="container mx-auto px-4 py-12 lg:py-16">
+          <div className="text-center max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-accent mb-3">
+              <Icon name="BadgeCheck" size={16} />
+              Официальный дистрибьютор
+            </div>
+            <h2 className="text-2xl lg:text-3xl font-bold text-primary">
+              «Энергоспецмонтаж» — официальный дистрибьютор
+              <span className="text-accent"> Ридан</span>,
+              <span className="text-accent"> VEDA</span> и
+              <span className="text-accent"> ДЕВИ</span>
+            </h2>
+          </div>
+          <div className="flex flex-wrap justify-center items-stretch gap-4 mt-8">
+            {['Ридан', 'VEDA', 'ДЕВИ'].map((brand) => (
+              <div
+                key={brand}
+                className="flex items-center gap-2 bg-white border border-border rounded-lg px-6 py-4 min-w-[160px] justify-center shadow-sm"
+              >
+                <Icon name="ShieldCheck" size={20} className="text-accent" />
+                <span className="text-lg font-bold text-primary">{brand}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="container mx-auto px-4 py-16 lg:py-24">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-4">
           <div>
