@@ -37,34 +37,14 @@ const heroSlides = [
     caption: 'Полная сборка с автоматикой VEDA VFD',
   },
   {
-    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/a3acbc0b-4b95-49c7-a02f-99970631fc62.jpg',
-    title: 'Силовой шкаф ВРУ с шинной системой',
-    caption: 'Распределение и учёт энергии',
-  },
-  {
-    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/f2809d62-7618-473a-85f9-e76d5131e08c.jpg',
-    title: 'Серия шкафов автоматики на производстве',
-    caption: 'Этап монтажа в цехе',
-  },
-  {
     src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/ad88726c-7197-4652-8e5c-f9170da921d0.jpg',
     title: 'Монтаж силовой и слаботочной части',
     caption: 'Сборка релейной автоматики CHNT',
   },
   {
-    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/2c58185c-0e16-4765-84fb-a8231494d96d.jpg',
-    title: 'Контроллер Siemens SIMATIC ET 200SP',
-    caption: 'Промышленная автоматика верхнего уровня',
-  },
-  {
     src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/80d14b34-8ef5-4447-9941-b2000ff9e665.jpg',
     title: 'Шкафы противопожарной автоматики',
     caption: 'Управление системой дымоудаления',
-  },
-  {
-    src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/c4cfb32c-347c-4c04-84cc-d7f6603806a3.jpg',
-    title: 'HMI-панель управления вентиляцией',
-    caption: 'Мнемосхема приточной установки',
   },
   {
     src: 'https://cdn.poehali.dev/projects/fc1a918b-d3b4-4990-93d6-d9f61d79771e/bucket/b480b9a0-409b-44b7-92e8-b8662de6761d.jpg',
